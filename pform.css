@@ -147,7 +147,7 @@
 .footer{
     display: flex;
     justify-content: space-between;
-    margin-top: 5%;
+    margin-top: 3%;
     padding-left: 10px;
     padding-right: 10px;
 }
