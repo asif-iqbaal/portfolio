@@ -1,0 +1,222 @@
+*body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#logo{
+    width: 20%;
+    text-align: center;
+    font-size: 150%;
+}
+#logo a{
+    text-decoration: none;
+    color: white;
+}
+.heading{
+    width: 100%;
+    height: 10%;
+   background: #156da4;
+    display: flex;
+    align-items: center;
+}
+.nav1{
+    width: 55%;
+ 
+}
+.list1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+   
+}
+.list1 li a{
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 20px;
+    color: white;
+}
+.list2{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.nav2{
+    width: 25%;
+    height: 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center
+   
+}
+#img1{
+    height: 20%;
+    width: 20%;
+    background-size: cover;
+  
+}
+#img2{
+    height: 40%;
+    width: 40%;
+    background-size: cover;
+}
+#img4{
+    height: 200%;
+    width: 23%;
+    background-size: cover;
+}
+  
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #12405d;
+}
+.login_form{
+    width: 70%;
+    height: 80vh;
+    background-color: #156da4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #12405d;
+    border-radius: 20px;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 70vh;
+    background-color: white;
+    border: 5px;
+    border-radius: 10px;
+
+}
+#sp{
+    text-align: center;
+    font-weight: 200px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.form_us{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    margin-top: 20px;
+}
+.form_us label{
+    padding-bottom: 2px;
+    padding-left: 10%;
+    font-size: 20px;
+    font-style: italic;
+}
+#username{
+    height: 2rem;
+    width: 70%;
+    margin-left: 15%;
+    text-decoration: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#bt{
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+#btn{
+    height: 50px;
+    width: 30%;
+    border: 5px;
+    border-radius: 5px;
+    background-color: #1a78b3;
+    color: white;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.footer a{
+    text-decoration: none;
+    color: #12405d;
+}
+@media (min-width: 300px) and (max-width: 800px){
+    .login_form {
+        width: 100%;
+        height: 80vh;
+        background-color: #156da4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid #12405d;
+        border-radius: 20px;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80vh;
+        background-color: white;
+        border: 5px;
+        border-radius: 10px;
+    }
+    @media (min-width: 300px) and (max-width: 800px){
+    .login_form {
+        width: 100%;
+        height: 80vh;
+        background-color: #7db0d0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid #12405d;
+        border-radius: 20px;
+    }
+    .nav2 {
+        visibility: hidden;
+        width: 0%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 65vh;
+        background-color: white;
+        border: 5px;
+        border-radius: 10px;
+    }
+
+    #logo {
+        /* text-align: center; */
+        font-size: 100%;
+        margin-left: 20px;
+    }
+    .nav1 {
+        width: 55%;
+        margin-left: 20%;
+    }
+    
+}
+    
+}
