@@ -1,0 +1,107 @@
+<!-- <?php
+
+$servername = 'localhost';
+$db_username = 'root'; 
+$db_password = '';
+$db_name = 'login_form';
+
+
+$con = mysqli_connect($servername, $db_username, $db_password, $db_name);
+
+
+if ($con->connect_error) {
+    die("Connection failed: " . $con->connect_error);
+}
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $fullname = $con->real_escape_string($_POST['fullname']);
+    $username = $con->real_escape_string($_POST['username']);
+    $mobile = $con->real_escape_string($_POST['mobile']);
+    $password = $con->real_escape_string($_POST['password']);
+
+
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+   
+    $sql = "INSERT INTO login (fullname, username, mobile, password) VALUES ('$fullname', '$username', '$mobile', '$hashed_password')";
+
+    // if ($con->query($sql) === TRUE) {
+    //     echo "New record added successfully";
+    // } else {
+    //     echo "Error: " . $sql . "<br>" . $con->error;
+    // }
+
+    $con->close();
+}
+
+?>; -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form fill up</title>
+    <link rel="stylesheet" href="pform.css">
+</head>
+<body>
+    <header class="heading">
+        <div id="logo"><a href="index.html"><h3>MD SHAMI</h3></a></div>
+        <div class="nav1">
+            <ul class="list1">
+                <li><a href="pform.html">Contact</a></li>
+                <li><a href="MD SHAMI.pdf">Resume</a></li>
+                <li><a href="index.html">About</a></li>
+            </ul>
+        </div>
+        <div class="nav2">
+            <div>
+                <a href="https://www.linkedin.com/in/md-shami-483863308/"><img src="4747495_linked in_social media_networking_icon.png" alt="linkedin"id="img1" ></a>
+               </div>
+           <div>
+            <a href="https://x.com/Mdshami12834897"><img src="11053969_x_logo_twitter_new_brand_icon.png" alt="twitter"  id="img2"></a>
+           </div>
+           <div>
+            <a href="https://github.com/asif-iqbaal"><img src="icons8-github-512.png" alt="github" id="img4"></a>
+           </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="images">
+                <img src="26984054_v813-aew-22.jpg" alt="imgage">
+        </div>
+        <div class="login_form">
+        <div class="form">
+
+            <h3 id="sp">Sign Up</h3>
+            <!-- <form action="pform.php" method="post"> -->
+            <div class="form_us">
+                <label for="Full Name">Full Name</label>
+            <input type="text" placeholder="enter your full name" id="username" name="fullname" re>
+            </div>
+            <div class="form_us">
+                <label for="username">username</label>
+            <input type="text" placeholder="username or email" id="username" name="username" required>
+            </div>
+            <div class="form_us">
+                <label for="mobile_num">mobile no</label>
+            <input type="text" placeholder="enter phone or mobile number" id="username" name="mobile" required>
+
+            <div class="form_us">
+                <label for="password">password</label>
+            <input type="password" placeholder="password" id="username" name="password" required>
+            </div>
+
+            <div id="bt">
+            <button  id="btn">Sign Up</button>
+            </div>
+        <!-- </form> -->
+            <div class="footer">
+            <a href="#" id="fp">forgot password?</a>
+            <a href="#">log in</a>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
